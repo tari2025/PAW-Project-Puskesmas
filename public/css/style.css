@@ -1,0 +1,54 @@
+:root {
+  --primary: #3fbbc0;
+  --dark: #2c4964;
+  --muted: #6c7a89;
+  --light: #f7fcfc;
+}
+* { scroll-behavior: smooth; }
+body { font-family: 'Roboto', sans-serif; color: #444; }
+h1,h2,h3,h4,h5,.navbar-brand { font-family: 'Poppins', sans-serif; }
+.site-header { box-shadow: 0 2px 18px rgba(44,73,100,.08); }
+.navbar { min-height: 76px; }
+.navbar-brand { color: var(--dark); font-size: 25px; font-weight: 700; }
+.navbar-brand span { color: var(--primary); }
+.nav-link { color: var(--dark); font-weight: 500; margin: 0 7px; }
+.nav-link:hover,.nav-link.active,.dropdown-item:hover { color: var(--primary); }
+.dropdown-menu { border: 0; box-shadow: 0 8px 28px rgba(44,73,100,.12); padding: 10px; }
+.dropdown-item { padding: 9px 14px; color: var(--dark); }
+.btn-primary { background: var(--primary); border-color: var(--primary); }
+.btn-primary:hover { background: #35a9ae; border-color: #35a9ae; }
+.hero-section { background: linear-gradient(110deg,rgba(247,252,252,.98),rgba(232,248,248,.90)); }
+.min-vh-75 { min-height: 570px; }
+.hero-content { padding-top: 70px; padding-bottom: 70px; }
+.eyebrow,.section-heading span { color: var(--primary); font-size: 13px; font-weight: 700; letter-spacing: 1.5px; }
+.hero-content h1 { color: var(--dark); font-size: clamp(35px,4.5vw,53px); line-height: 1.22; font-weight: 700; margin: 18px 0; }
+.hero-content h1 span { color: var(--primary); }
+.hero-content p { color: var(--muted); max-width: 680px; margin-bottom: 28px; }
+.hero-card { background: white; border-radius: 18px; padding: 36px 25px; box-shadow: 0 15px 45px rgba(44,73,100,.12); text-align: center; }
+.hero-icon { width: 105px; height: 105px; border-radius: 50%; background: #e5f7f7; color: var(--primary); display: grid; place-items: center; font-size: 52px; margin: 0 auto 22px; }
+.hero-card h3 { color: var(--dark); font-weight: 600; }
+.hero-card p { color: var(--muted); margin: 10px 0 0; }
+.section-padding { padding: 76px 0; }
+.section-heading { margin: 0 auto 42px; max-width: 760px; }
+.section-heading h2 { color: var(--dark); font-weight: 700; margin: 10px 0; }
+.section-heading p { color: var(--muted); }
+.service-card { display: block; padding: 30px 23px; border-radius: 12px; background: white; box-shadow: 0 4px 28px rgba(44,73,100,.08); transition: .25s; text-decoration: none; min-height: 255px; }
+.service-card:hover { transform: translateY(-5px); box-shadow: 0 10px 35px rgba(44,73,100,.13); }
+.service-card > i { font-size: 38px; color: var(--primary); }
+.service-card h4 { color: var(--dark); font-size: 18px; margin: 18px 0 10px; font-weight: 600; }
+.service-card p { color: var(--muted); line-height: 1.6; margin-bottom: 16px; }
+.service-arrow { color: var(--primary); font-size: 13px; font-weight: 700; }
+.news-section { background: var(--light); }
+.news-placeholder { background: white; padding: 35px 20px; border-radius: 12px; box-shadow: 0 4px 25px rgba(44,73,100,.06); }
+.news-placeholder i { font-size: 36px; color: var(--primary); }
+.news-placeholder h5 { color: var(--dark); margin-top: 12px; }
+.news-placeholder p,.login-section p { color: var(--muted); margin-bottom: 0; }
+.login-section h2 { color: var(--dark); font-weight: 700; }
+.login-section p { margin: 10px 0 20px; }
+.footer-section { background: #f1fafa; color: var(--muted); }
+.brand-footer { color: var(--dark); font-weight: 700; }
+@media (max-width: 767px) {
+  .min-vh-75 { min-height: auto; }
+  .hero-content { padding-top: 75px; padding-bottom: 75px; }
+  .section-padding { padding: 58px 0; }
+}

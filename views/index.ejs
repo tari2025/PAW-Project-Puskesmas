@@ -1,0 +1,88 @@
+<%- include('partials/header', { title }) %>
+
+<main>
+  <section id="home" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center min-vh-75">
+        <div class="col-lg-8 hero-content">
+          <span class="eyebrow"><i class="bi bi-heart-pulse-fill"></i> PUSKESMAS SEHAT PILIHAN KITA</span>
+          <h1>Selamat datang di <span>Media Informasi Layanan Kesehatan Puskesmas</span></h1>
+          <p class="lead">Dapatkan informasi layanan kesehatan dan konsultasi dengan mudah, cepat, dan nyaman melalui Medi-Chat.</p>
+          <a href="#medi-chat" class="btn btn-primary btn-lg rounded-pill px-4">Mulai Konsultasi <i class="bi bi-arrow-right ms-2"></i></a>
+        </div>
+        <div class="col-lg-4 d-none d-lg-block">
+          <div class="hero-card">
+            <div class="hero-icon"><i class="bi bi-hospital"></i></div>
+            <h3>Layanan Kesehatan</h3>
+            <p>Informasi puskesmas dalam satu tempat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="layanan" class="section-padding">
+    <div class="container">
+      <div class="section-heading text-center">
+        <span>LAYANAN KAMI</span>
+        <h2>Layanan Utama</h2>
+        <p>Pilih layanan yang Anda butuhkan untuk mendapatkan informasi dan bantuan kesehatan dengan mudah dan nyaman.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3" id="pendaftaran">
+          <a class="service-card h-100 service-link" href="#pendaftaran">
+            <i class="bi bi-clipboard2-check"></i><h4>Prosedur Pendaftaran</h4>
+            <p>Informasi tata cara pendaftaran pasien di Puskesmas.</p>
+            <span class="service-arrow">Lihat informasi <i class="bi bi-arrow-right"></i></span>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-3" id="biaya">
+          <a class="service-card h-100 service-link" href="#biaya">
+            <i class="bi bi-cash-coin"></i><h4>Biaya Pengobatan</h4>
+            <p>Informasi biaya pengobatan untuk pasien rawat inap dan rawat jalan.</p>
+            <span class="service-arrow">Lihat informasi <i class="bi bi-arrow-right"></i></span>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-3" id="jadwal">
+          <a class="service-card h-100 service-link" href="#jadwal">
+            <i class="bi bi-calendar2-week"></i><h4>Jadwal Layanan</h4>
+            <p>Informasi jadwal layanan, jadwal dokter, dan pelayanan lainnya.</p>
+            <span class="service-arrow">Lihat informasi <i class="bi bi-arrow-right"></i></span>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-3" id="medi-chat">
+          <a class="service-card h-100 service-link" href="#medi-chat">
+            <i class="bi bi-chat-dots"></i><h4>Konsultasi Kesehatan</h4>
+            <p>Layanan konsultasi informasi umum Puskesmas berbasis chat.</p>
+            <span class="service-arrow">Mulai konsultasi <i class="bi bi-arrow-right"></i></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="informasi-terbaru" class="section-padding news-section">
+    <div class="container">
+      <div class="section-heading text-center">
+        <span>INFORMASI</span>
+        <h2>Informasi Terbaru</h2>
+        <p>Kabar dan pengumuman terbaru dari Puskesmas.</p>
+      </div>
+      <div class="news-placeholder text-center">
+        <i class="bi bi-megaphone"></i>
+        <h5>Belum ada pengumuman terbaru</h5>
+        <p>Informasi terbaru akan ditampilkan pada bagian ini.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="login" class="login-section py-5">
+    <div class="container text-center">
+      <h2>Butuh akses layanan?</h2>
+      <p>Silakan masuk untuk melanjutkan ke layanan Puskesmas.</p>
+      <a href="#login" class="btn btn-primary rounded-pill px-4">Login</a>
+    </div>
+  </section>
+</main>
+
+<%- include('partials/footer') %>
